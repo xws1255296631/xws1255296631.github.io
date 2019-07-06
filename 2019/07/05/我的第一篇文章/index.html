@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>我的第一篇文章 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##第一章 内容  ##第二章 内容  ##参考文献 www.codesheep.cn">
+  <meta name="description" content="##第一天Hexo搭建博客 环境准备：需要git和node支持，然后装hexo，使用hexo命令 一．部署环境首先安装node.js打开cmd查看node版本C:\Users\12552&amp;gt;node -vv10.16.0C:\Users\12552&amp;gt;npm -v6.9.0利用npm安装cnpmC:\Users\12552&amp;gt;npm install -g cnpm –registry=">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇文章">
 <meta property="og:url" content="http://yoursite.com/2019/07/05/我的第一篇文章/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##第一章 内容  ##第二章 内容  ##参考文献 www.codesheep.cn">
+<meta property="og:description" content="##第一天Hexo搭建博客 环境准备：需要git和node支持，然后装hexo，使用hexo命令 一．部署环境首先安装node.js打开cmd查看node版本C:\Users\12552&amp;gt;node -vv10.16.0C:\Users\12552&amp;gt;npm -v6.9.0利用npm安装cnpmC:\Users\12552&amp;gt;npm install -g cnpm –registry=">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-05T12:23:03.840Z">
+<meta property="og:updated_time" content="2019-07-06T06:44:00.727Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的第一篇文章">
-<meta name="twitter:description" content="##第一章 内容  ##第二章 内容  ##参考文献 www.codesheep.cn">
+<meta name="twitter:description" content="##第一天Hexo搭建博客 环境准备：需要git和node支持，然后装hexo，使用hexo命令 一．部署环境首先安装node.js打开cmd查看node版本C:\Users\12552&amp;gt;node -vv10.16.0C:\Users\12552&amp;gt;npm -v6.9.0利用npm安装cnpmC:\Users\12552&amp;gt;npm install -g cnpm –registry=">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -174,11 +174,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##第一章</p>
-<p>内容</p>
-<hr>
-<p>##第二章</p>
-<p>内容</p>
+        <p>##第一天<br>Hexo搭建博客</p>
+<p>环境准备：需要git和node支持，然后装hexo，使用hexo命令</p>
+<p>一．部署环境<br>首先安装node.js<br>打开cmd<br>查看node版本<br>C:\Users\12552&gt;node -v<br>v10.16.0<br>C:\Users\12552&gt;npm -v<br>6.9.0<br>利用npm安装cnpm<br>C:\Users\12552&gt;npm install -g cnpm –registry=//https:registry.npm.taobao.org<br>安装hexo框架<br>C:\Users\12552&gt;Cnpm install –g hexo-cli<br>看路径<br>C:\Users\12552&gt;Chdir<br>建空文件夹blog<br>C:\Users\12552&gt;Mkdir blog<br>进blog<br>C:\Users\12552&gt;Cd blog/<br>二．初始化博客（自行clone，有默认主题）<br>C:\Users\12552\ blog &gt;Hexo init<br>启动博客<br>C:\Users\12552\ blog &gt;hexo s（本地localhost:4000端口）<br>三．写博客<br>新建一篇文章<br>C:\Users\12552\ blog &gt;Hexo n “我的第一篇文章”<br>进入source/_posts目录<br>C:\Users\12552\ blog &gt;Cd source/_posts/<br>编辑内容<br>C:\Users\12552\ blog\ source _posts &gt;Notepad  “我的第一篇文章.md”<br>退两步到bllog<br>C:\Users\12552\ blog\ source _posts &gt;Cd ../..<br>清理<br>C:\Users\12552\ blog &gt;hexo clean<br>生成<br>C:\Users\12552\ blog &gt;hexo g<br>再次启动<br>C:\Users\12552\ blog &gt;hexo start（本地localhost:4000端口）</p>
+<p>四．部署到github<br>先进入github网站<br>新建仓库<br>名字为昵称.github.io创建<br> 在blog目录下装git的部署插件<br>C:\Users\12552\ blog &gt;cnpm install –save hexo-deployer-git<br>设置config.yml文件<br>C:\Users\12552\ blog &gt; Notepad _config.yml<br>(底部type: git(注意：冒号后有空格，文字对齐)<br>     Repo: <a href="https://github.com/昵称.github.io.git" target="_blank" rel="noopener">https://github.com/昵称.github.io.git</a><br>     Branch: master)<br>部署到远端<br>C:\Users\12552\ blog &gt;hexo d<br>输入GitHub账号密码（密码不显示）<br>刷新GitHub仓库<br>用仓库名访问<br>五．换主题<br>    第一步下载主题clone到theme下yilia里<br>　　C:\Users\12552\ blog &gt;git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> theme/yilia<br>　　第二步将这个主题配到自己的博客里<br>　　C:\Users\12552\ blog &gt;notepad _config.yml<br>　　(找到并修改Extensions下的theme:yilia保存退出)<br>　　再次清理<br>C:\Users\12552\ blog &gt;hexo clean<br>再次生成<br>C:\Users\12552\ blog &gt;hexo g<br>再次启动博客<br>C:\Users\12552\ blog &gt;hexo s（本地localhost:4000端口）<br>　　部署到远端<br>C:\Users\12552\ blog &gt;hexo d<br>　　这就可以用GitHub地址访问<br>　　<br>　　<br>Ls –l,相当于windows的dir(查看当前文件目录)<br>Pwd,相当于Windows的chdir（查看当前文件路径）<br>Tail,直接用大神封装好的tail.exe<br>Notepad（编辑）</p>
 <hr>
 <p>##参考文献</p>
 <p><a href="http://www.codesheep.cn" target="_blank" rel="noopener">www.codesheep.cn</a></p>
